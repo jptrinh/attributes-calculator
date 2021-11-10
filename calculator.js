@@ -26,7 +26,8 @@ $(document).ready(function () {
             }
         });
 
-        ($('[calculator-element=price]')).text(sum);
+        let currency = $('[calculator-element=price]').attr('calculator-currency');
+        ($('[calculator-element=price]')).text(sum + " " + currency);
         $("form[calculator-element='calculator'] input[id='calculator-val-sent']").attr("value", sum);
     }
 
