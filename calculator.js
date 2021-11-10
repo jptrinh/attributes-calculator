@@ -17,7 +17,7 @@ $(document).ready(function () {
         });
 
         $.each($("input[type='number']"), function () {
-            if ($(this).attr('calculator-value') = undefined) {
+            if ($(this).attr('calculator-value') == undefined) {
                 sum += Number(($(this).val()));
             } else {
                 sum += Number(($(this).val() * ($(this).attr('calculator-value'))));
