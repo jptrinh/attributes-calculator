@@ -21,7 +21,9 @@ $(document).ready(function () {
         });
 
         $.each($("select[calculator-element='select'"), function () {
-            sum += Number(($(this).val()));
+            if(!isNaN) {
+                sum += Number(($(this).val()));
+            }
         });
 
         ($('[calculator-element=price]')).text(sum);
