@@ -164,13 +164,19 @@
                             <div
                               class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox-icon w--redirected-checked">
                             </div><input type="checkbox" id="Checkbox" name="Checkbox" data-name="Checkbox" checked=""
-                              style="opacity:0;position:absolute;z-index:-1" calculator-value="100"><span for="Checkbox"
+                              calculator-value="100"><span for="Checkbox"
                               class="form-checkbox-label w-form-label">SEO</span>
-                          </label><label calculator-value="250" class="w-checkbox form-checkbox">
+                            <div
+                              class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox-icon w--redirected-checked">
+                            </div>
+                            <input type="checkbox" id="autre" name="autre" data-name="autre" checked="">
+                            <span for="autre" class="form-checkbox-label w-form-label">Autre</span>
+                          </label>
+                          <label calculator-value="250" class="w-checkbox form-checkbox">
                             <div
                               class="w-checkbox-input w-checkbox-input--inputType-custom form-checkbox-icon w--redirected-checked">
                             </div><input type="checkbox" id="Checkbox-3" name="Checkbox-3" data-name="Checkbox 3"
-                              checked="" style="opacity:0;position:absolute;z-index:-1" calculator-value="250"><span
+                              checked="" calculator-value="250"><span
                               for="Checkbox-3" class="form-checkbox-label w-form-label">Ads</span>
                           </label><label calculator-value="200" class="w-checkbox form-checkbox">
                             <div
@@ -185,7 +191,12 @@
                               pages</label>
                             <input type="number" class="w-input" maxlength="256" name="number" data-name="number"
                               calculator-value="10" placeholder="Combien de ?" id="number" required=""></div>
-
+                        </div>
+                        <div class="margin-bottom margin-medium">
+                          <div class="form-field-wrapper">
+                            <label for="number" class="form-label">Input non compté</label>
+                            <input type="number" class="w-input" maxlength="256" name="number" data-name="number"
+                              placeholder="Combien de ?" id="number" required=""></div>
                         </div>
                       </div><select id="select" name="select" data-name="select" class="w-select"
                         calculator-element="select">
@@ -196,10 +207,11 @@
                     </div>
                     <div class="margin-bottom margin-large">
                       <div class="calculator_price-wrapper">
-                        <div calculator-element="price" calculator-currency="€" class="calculator_price background-color-black">0 €</div>
+                        <div calculator-element="price" calculator-currency="€"
+                          class="calculator_price background-color-black">0 €</div>
                       </div>
                     </div><input type="submit" value="Envoyer" data-wait="Please wait..." class="button w-button">
-                  </div>
+                </div>
                 </form>
                 <div class="w-form-done">
                   <div>Thank you! Your submission has been received!</div>

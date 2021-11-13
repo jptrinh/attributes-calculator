@@ -5,19 +5,28 @@ $(document).ready(function () {
         let sum = 0;
 
         $.each($("input:checkbox"), function () {
-            if ($(this).is(':checked')) {
-                sum += Number(($(this).attr('calculator-value')));
-            }
+            let attr = $(this).attr('calculator-value');
+            if (typeof attr !== typeof undefined && attr !== false) {
+                if ($(this).is(':checked')) {
+                    sum += Number(($(this).attr('calculator-value')));
+                }
+            }            
         });
 
         $.each($("input:radio"), function () {
-            if ($(this).is(':checked')) {
-                sum += Number(($(this).attr('calculator-value')));
-            }
+            let attr = $(this).attr('calculator-value');
+            if (typeof attr !== typeof undefined && attr !== false) {
+                if ($(this).is(':checked')) {
+                    sum += Number(($(this).attr('calculator-value')));
+                }
+            }                 
         });
-
+        
         $.each($("input[type='number']"), function () {
-            sum += Number(($(this).val() * ($(this).attr('calculator-value'))));
+            let attr = $(this).attr('calculator-value');
+            if (typeof attr !== typeof undefined && attr !== false) {
+                sum += Number(($(this).val() * ($(this).attr('calculator-value'))));
+            }    
         });
 
         $.each($("select[calculator-element='select'"), function () {
